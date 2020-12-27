@@ -1,0 +1,36 @@
+{
+  "name": "MenuItem",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "entityName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "menuItem",
+      "otherEntityRelationshipName": "menuItem",
+      "relationshipName": "parent",
+      "otherEntityField": "name"
+    }
+  ],
+  "changelogDate": "20201227000348",
+  "entityTableName": "menu_item",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

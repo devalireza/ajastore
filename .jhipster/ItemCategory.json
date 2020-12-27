@@ -1,0 +1,33 @@
+{
+  "name": "ItemCategory",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "100"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "itemCategory",
+      "otherEntityRelationshipName": "itemCategory",
+      "relationshipName": "parent",
+      "otherEntityField": "name"
+    }
+  ],
+  "changelogDate": "20201227000048",
+  "entityTableName": "item_category",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

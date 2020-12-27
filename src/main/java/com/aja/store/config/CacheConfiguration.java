@@ -48,6 +48,13 @@ public class CacheConfiguration {
             createCache(cm, com.aja.store.domain.User.class.getName());
             createCache(cm, com.aja.store.domain.Authority.class.getName());
             createCache(cm, com.aja.store.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.aja.store.domain.Item.class.getName());
+            createCache(cm, com.aja.store.domain.ItemInstance.class.getName());
+            createCache(cm, com.aja.store.domain.Department.class.getName());
+            createCache(cm, com.aja.store.domain.ItemCategory.class.getName());
+            createCache(cm, com.aja.store.domain.Store.class.getName());
+            createCache(cm, com.aja.store.domain.ItemInstanceTransact.class.getName());
+            createCache(cm, com.aja.store.domain.MenuItem.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

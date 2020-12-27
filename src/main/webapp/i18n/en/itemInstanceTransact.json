@@ -1,0 +1,25 @@
+{
+  "store13App": {
+    "itemInstanceTransact": {
+      "home": {
+        "title": "Item Instance Transacts",
+        "createLabel": "Create a new Item Instance Transact",
+        "createOrEditLabel": "Create or edit a Item Instance Transact",
+        "notFound": "No Item Instance Transacts found"
+      },
+      "created": "A new Item Instance Transact is created with identifier {{ param }}",
+      "updated": "A Item Instance Transact is updated with identifier {{ param }}",
+      "deleted": "A Item Instance Transact is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Item Instance Transact {{ id }}?"
+      },
+      "detail": {
+        "title": "Item Instance Transact"
+      },
+      "deliveryDate": "Delivery Date",
+      "transactionType": "Transaction Type",
+      "user": "User",
+      "itemInstanceId": "Item Instance Id"
+    }
+  }
+}

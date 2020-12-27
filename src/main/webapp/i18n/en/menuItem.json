@@ -1,0 +1,24 @@
+{
+  "store13App": {
+    "menuItem": {
+      "home": {
+        "title": "Menu Items",
+        "createLabel": "Create a new Menu Item",
+        "createOrEditLabel": "Create or edit a Menu Item",
+        "notFound": "No Menu Items found"
+      },
+      "created": "A new Menu Item is created with identifier {{ param }}",
+      "updated": "A Menu Item is updated with identifier {{ param }}",
+      "deleted": "A Menu Item is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Menu Item {{ id }}?"
+      },
+      "detail": {
+        "title": "Menu Item"
+      },
+      "name": "Name",
+      "entityName": "Entity Name",
+      "parent": "Parent"
+    }
+  }
+}

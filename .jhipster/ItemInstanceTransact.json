@@ -1,0 +1,48 @@
+{
+  "name": "ItemInstanceTransact",
+  "fields": [
+    {
+      "fieldName": "deliveryDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "transactionType",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "10"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "itemInstanceTransact",
+      "relationshipName": "user",
+      "otherEntityField": "lastName"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "itemInstance",
+      "otherEntityRelationshipName": "itemInstanceTransact",
+      "relationshipName": "itemInstanceId",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201227000248",
+  "entityTableName": "item_instance_transact",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
